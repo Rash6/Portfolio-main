@@ -8,6 +8,7 @@ const Footer = () => {
             <p className="footer-text">Made with ♥️ by Rashmi<br></br>
             <br></br>
             <small>All rights reserved © 2022 Rashmi N</small><br></br>
+            
             <small>Illustrations by undraw.co</small>
             </p>
         </div>

@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import './styles.css';
 import connectLight from '../media/connect-light.png';
 import connectDark from '../media/connect-dark.png';
-import resume from '../media/TejaswiChaudhari_Resume.pdf'
+import resume from '../media/rashmi-resume.pdf';
 //import transcript from '../media/TejaswiChaudhari_transcript.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -13,6 +13,10 @@ import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
+import {
+	faEnvelope,
+	faPhoneAlt,
+} from '@fortawesome/free-solid-svg-icons';
 
 const About = ({darkMode}) => {
 
@@ -116,6 +120,16 @@ const About = ({darkMode}) => {
                         <a href="https://github.com/Rash6" target="_blank" rel="noreferrer noopener">
                           <Button variant={darkMode ? "outline-light" : "outline-dark"}>
                             <FontAwesomeIcon className="dark" size="lg" icon={faGithub}/> Rashmi N
+                          </Button>
+                        </a>
+                        <a href="mailto:rashmirohini20@gmail.com" target="_blank" rel="noreferrer noopener">
+                          <Button variant={darkMode ? "outline-light" : "outline-dark"} className='a'>
+                            <FontAwesomeIcon className="dark" size="lg" icon={faEnvelope}/>rashmirohini20@gmail.com
+                          </Button>
+                        </a>
+                        <a href="tel:+91 7259140535" target="_blank" rel="noreferrer noopener">
+                          <Button variant={darkMode ? "outline-light" : "outline-dark"}>
+                            <FontAwesomeIcon className="dark" size="lg" icon={faPhoneAlt}/>+91-7259140535
                           </Button>
                         </a>
                         <img src={darkMode? connectDark : connectLight} alt="connect" className="connect-img img-fluid animated"/>
